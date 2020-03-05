@@ -26,25 +26,25 @@
   </div>
   <script src="js/anime.min.js"></script>
   <script> 
-    // De drie afbeeldingen moeten bewegen
+    //De drie afbeeldingen moeten bewegen
     anime({
       targets: '.gravity', //Target het element met class gravity voor deze beweging
       keyframes: [ 
-        {translateY: -40},
+        {translateY: -40}, //Bepaal waar het element heen moet bewegen a.d.h.v. cijfers
         {translateX: 250},
         {translateY: 40},
         {translateX: 0},
         {translateY: 0}
       ],
-      duration: 4000,
+      duration: 4000, //Bepaal hoelang een beweging duurt
       easing: 'easeOutElastic(1, .8)',
-      loop: true
+      loop: true //De beweging moet zich blijven herhalen
     });
 
-    // hier laat ik het plaatje ronddraaien gedurende 4 seconden.
+    //Hier laat ik het plaatje ronddraaien
     anime({
       targets: '.food',
-      rotate: '1turn',
+      rotate: '1turn', //Bepaal hoe de rotatie eruit ziet, de duration slaat op 1 turn.
       duration: 4000,
       easing: 'easeOutElastic(1, .8)',
       loop: true
