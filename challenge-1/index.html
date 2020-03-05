@@ -46,14 +46,14 @@
       targets: '.food',
       rotate: '1turn', //Bepaal hoe de rotatie eruit ziet, de duration slaat op 1 turn.
       duration: 4000,
-      easing: 'easeOutElastic(1, .8)',
+      easing: 'easeOutElastic(1, .8)', //Bepaal richting waarin het element beweegt
       loop: true
     });
 
     anime({
       targets: '.atmosphere',
       keyframes: [
-        {translateY: 0},
+        {translateY: 0}, //Ik heb de waarden van 'gravity' omgedraaid, waardoor 'atmosphere' de tegenovergestelde kant opdraait.
         {translateX: 0},
         {translateY: 40},
         {translateX: 250},
