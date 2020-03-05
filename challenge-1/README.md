@@ -1,8 +1,8 @@
-# Challange 1
+# Challenge 1
 
 ## By Bo
 
-Musk goes to Mars was het thema van de challange. Ik wilde een simpel, overzichtelijk maar toch Mars-gerelateerd dashboard creëren. De crew en bemanning, onderweg naar Mars, moet namelijk "even snel" op het dashboard kunnen kijken om de cruciale informatie op zich te kunnen nemen. Dat is mijn doel.
+Musk goes to Mars was het thema van de challenge. Ik wilde een simpel, overzichtelijk maar toch Mars-gerelateerd dashboard creëren. De crew en bemanning, onderweg naar Mars, moet namelijk "even snel" op het dashboard kunnen kijken om de cruciale informatie op zich te kunnen nemen. Dat is mijn doel.
 
 Om de bestemming Mars in het ontwerp terug te laten komen, ben ik opzoek gegaan naar een kleurenpalet, de kleuren van de planeet Mars. Na het bestuderen van de planeet zelf, heb ik de kleuren uitgekozen en in het ontwerp verwerkt. 
 
