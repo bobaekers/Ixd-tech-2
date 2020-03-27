@@ -44,37 +44,34 @@ p{
 }
 
 .bliksemStart{ /*Bepaal opmaak voor de animatie die om de bovenste paragraph heen zit*/
-  animation: lightStart 1s 1s infinite; /*Zorg ervoor dat de bor
+  animation: lightStart 1s 1s infinite; /*Zorg ervoor dat de animatie aan de boven- en linkerkant van de paragrapgh 1 seconde zichtbaar zijn. Laat dit niet stoppen.*/
   animation-delay: 1s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in; /*Laat de animatie in elkaar overvloeien*/
   padding: 5% 2%; 
-  border: 2px solid rgba(245, 233, 66, 0);
+  border: 2px solid rgba(245, 233, 66, 0); 
 
 }
 
 .bliksemMid{
   animation: lightMid 1s 1s infinite;
-  animation-delay: 1s;
+  animation-delay: 1s; /*Laat de start deze middelste animatie 1 seconde later starten*/
   padding: 5% 2%;
 
-  border: 2px solid rgba(245, 233, 66, 0);
+  border: 2px solid rgba(245, 233, 66, 0); /*Zorg dat de opmaak de animatie laat lijken op een bliksemschicht, door het een lichtgele kleur te geven*/
 
 }
 
 .bliksemEind{
   animation: lightEnd 1s 1s infinite;
   animation-delay: 1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out; /*Laat de animatie uitvloeien in de richting van lightStart, zodat het een geheel vormt*/
   padding-bottom: 5%;
 
   border: 2px solid rgba(245, 233, 66, 0);
 
-
 }
 
-.textStart{
-  /* margin-top: 20%; */
-}
+/*Maak de drie animation keyframes aan voor de drie .bliksem's*/
 
 @keyframes lightStart{
   0%{
