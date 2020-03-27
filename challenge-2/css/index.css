@@ -1,0 +1,232 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+}
+
+
+body{
+    min-height: 100%;
+    background: url('../afb/marsbynight.jpeg') center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+p{
+    text-align: center;
+    font-family: Microsoft JhengHei UI Light, sans-serif;
+    color: white;
+    font-size: 4em;
+    padding-top: 5%;
+}
+
+.grid-item1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 10%;
+
+}
+.clock {
+
+    color: wheat;
+    font-size: 3em;
+    font-family: Microsoft JhengHei UI Light, sans-serif;
+    letter-spacing: 7px;
+    align-self: auto;
+    margin-bottom: 5%;
+}
+
+.bliksemStart{
+  animation: lightStart 1s 1s infinite;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  padding: 5% 2%;
+  border: 2px solid rgba(245, 233, 66, 0);
+
+}
+
+.bliksemMid{
+  animation: lightMid 1s 1s infinite;
+  animation-delay: 1s;
+  padding: 5% 2%;
+
+  border: 2px solid rgba(245, 233, 66, 0);
+
+}
+
+.bliksemEind{
+  animation: lightEnd 1s 1s infinite;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  padding-bottom: 5%;
+
+  border: 2px solid rgba(245, 233, 66, 0);
+
+
+}
+
+.textStart{
+  /* margin-top: 20%; */
+}
+
+@keyframes lightStart{
+  0%{
+    border-top-color: rgba(245, 233, 66, 1);
+  }
+  25%{
+    border-top-color: rgba(245, 233, 66, 0.5);
+    border-left-color: rgba(245, 233, 66, 0.5);
+
+  }
+  50%{
+    border-top-color: rgba(245, 233, 66, 0.0);
+    border-left-color: rgba(245, 233, 66, 1);
+
+  }
+
+  75%{
+    border-top-color: rgba(245, 233, 66, 0.0);
+    border-left-color: rgba(245, 233, 66, 0.5);
+  }
+
+  100%{
+    border-top-color: rgba(245, 233, 66, 0);
+    border-left-color: rgba(245, 233, 66, 0);
+
+  }
+
+}
+
+@keyframes lightMid{
+  0%{
+
+  }
+  25%{
+
+  }
+  50%{
+    border-top-color: rgba(245, 233, 66, 1);
+
+
+  }
+  62.5%{
+    border-top-color: rgba(245, 233, 66, 0.5);
+    border-right-color: rgba(245, 233, 66, 0.5);
+  }
+
+  75%{
+    border-top-color: rgba(245, 233, 66, 0.0);
+    border-right-color: rgba(245, 233, 66, 1);
+  }
+
+  87.5%{
+    border-top-color: rgba(245, 233, 66, 0.0);
+    border-right-color: rgba(245, 233, 66, 0.5);
+  }
+
+  100%{
+    border-top-color: rgba(245, 233, 66, 0);
+    border-right-color: rgba(245, 233, 66, 0);
+
+  }
+
+
+}
+
+@keyframes lightEnd{
+  0%{
+
+  }
+  25%{
+
+  }
+  50%{
+
+
+
+  }
+  62.5%{
+
+  }
+
+  75%{
+    border-top-color: rgba(245, 233, 66, 1);
+
+  }
+
+  81.2%{
+    border-top-color: rgba(245, 233, 66, 0.5);
+    border-left-color: rgba(245, 233, 66, 0.5);
+  }
+
+  87.5%{
+    border-top-color: rgba(245, 233, 66, 0.0);
+    border-left-color: rgba(245, 233, 66, 1);
+  }
+
+  93.7%{
+    border-top-color: rgba(245, 233, 66, 0.0);
+    border-left-color: rgba(245, 233, 66, 0.5);
+  }
+
+  100%{
+    border-top-color: rgba(245, 233, 66, 0);
+    border-left-color: rgba(245, 233, 66, 0);
+
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+  p{
+      font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+  p{
+
+      font-size: 4.5em;
+  }
+
+  .clock {
+      font-size: 5em;
+
+  }
+
+  .bliksemStart, .bliksemMid , .bliksemEind{
+    border-width: 3px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 2800px) {
+  body{
+
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+  p{
+
+      font-size: 5em;
+  }
+
+  .clock {
+      font-size: 7em;
+
+  }
+  .bliksemStart, .bliksemMid , .bliksemEind{
+    border-width: 4px;
+  }
+
+
+
+}

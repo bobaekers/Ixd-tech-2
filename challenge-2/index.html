@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MARS O'CLOCK</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <script>
+            function showTime(){
+                var date = new Date();
+                var h = date.getHours(); // 0 - 23
+                var m = date.getMinutes(); // 0 - 59
+                var s = date.getSeconds(); // 0 - 59
+                var dagNacht = document.querySelector(".dagNacht");
+                var session = "AM"; //Maak functie showTime aan en geef betekenis aan de variabelen uren, minuten, seconden
+                console.log(h);
+
+
+                function changeBackground(){ //zorg ervoor met deze functie dat de achtergrond mee verandert met de tijd (dag en nacht)
+
+                }
+                if(h > 20 && h < 8){
+                    console.log('hoi'); //test of de code het doet met de aangegeven uren door 'hoi' te laten verschijnen in de console
+
+                    dagNacht.style.background = "url('afb/marsbynight.jpg')";
+                    dagNacht.style.backgroundRepeat = "no-repeat";
+                    dagNacht.style.backgroundSize = "cover";
+                    dagNacht.style.backgroundPosition = "center";
+                                                                    //laat de nacht achtergrond verschijnen tussen 8 uur 's avonds en 8 uur 's ochtends
+                }else if (h > 8 && h<20) {
+                    console.log('heyy') //test of de code het doet met specifieke uren door 'heyy' te laten verschijnen in de console
+                    dagNacht.style.background = "url('afb/marsdagNieuw.jpg')";
+                    dagNacht.style.backgroundRepeat = "no-repeat";
+                    dagNacht.style.backgroundSize = "cover";
+                    dagNacht.style.backgroundPosition = "center"; //laat de dag achtergrond verschijnen tussen 8 uur 's ochtends en 8 uur 's avonds
+                    //dagNacht.style.background = "url('afb/marsbynight.jpeg')";
+                }
+
+                if(h == 0){
+                    h = 12; //00:00 staat gelijk aan 12:00, om de volgende berekening te kunnen maken (zie hieronder)
+                }
+
+                if(h > 12){
+                    h = h - 12;
+                    session = "PM"; //Voor de digitale klok is het de bedoeling dat de uren boven 12:00 - 12 worden gedaan om het uur om te rekenen (bijv. 14:00-12= 2 uur pm)
+                }
+
+
+
+                h = (h < 10) ? "0" + h : h;
+                m = (m < 10) ? "0" + m : m;
+                s = (s < 10) ? "0" + s : s; //Laat de code berekenen welk uur, welke minuten en welke seconden er weergegeven moeten worden op een bepaald moment
+
+                var time = h + ":" + m + ":" + s; //Zorg ervoor dat de tijd het juist gecodeerde hour (h), : - teken, minutes (m) en seconds (s) op deze volgorde wordt weergegeven
+
+                document.getElementById("MyClockDisplay").innerText = time;
+                document.getElementById("session").textContent = session;
+
+                setTimeout(showTime, 1000);
+
+            }
+
+        </script>
+    </head>
+    <body class="dagNacht" onload="showTime()">
+        <div class="grid-item1">
+        <p class="textStart">
+            It's
+        </p>
+        <br/>
+        <span id="MyClockDisplay" class="clock" onload="showTime()"></span>
+        <span id="session" class="clock"></span>
+        <br/>
+        <p class="bliksemStart">
+            o ' clock
+        </p>
+        <p class="bliksemMid">
+            on Mars
+        </p>
+        <p class="bliksemEind">
+            right now
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
