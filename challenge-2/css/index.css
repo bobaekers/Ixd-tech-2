@@ -71,9 +71,10 @@ p{
 
 }
 
-/*Maak de drie animation keyframes aan voor de drie .bliksem's*/
+/*Maak de drie animation keyframes aan voor de drie .bliksem's, om te bepalen wanneer welke actie nodig is voor de gewenste animatie*/
 
 @keyframes lightStart{
+  /*Zorg ervoor dat de bliksem het gewenste effect krijgt - waarin het lijkt alsof de keyframes in elkaar overflitsen - door de kleur per selector verandert */
   0%{
     border-top-color: rgba(245, 233, 66, 1);
   }
@@ -183,7 +184,7 @@ p{
 
 @media only screen and (max-width: 350px) {
   p{
-      font-size: 2.5em;
+      font-size: 2.5em; /*De tekst in de paragraphs moet per device meeschalen qua grootte*/
   }
 }
 
@@ -194,7 +195,7 @@ p{
   }
 
   .clock {
-      font-size: 5em;
+      font-size: 5em; /*De size van de clock moet per device meeschalen qua grootte*/
 
   }
 
@@ -207,7 +208,7 @@ p{
   body{
 
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; 
 
 }
 
