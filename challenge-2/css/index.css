@@ -43,11 +43,11 @@ p{
     margin-bottom: 5%;
 }
 
-.bliksemStart{
-  animation: lightStart 1s 1s infinite;
+.bliksemStart{ /*Bepaal opmaak voor de animatie die om de bovenste paragraph heen zit*/
+  animation: lightStart 1s 1s infinite; /*Zorg ervoor dat de bor
   animation-delay: 1s;
   animation-timing-function: ease-in;
-  padding: 5% 2%;
+  padding: 5% 2%; 
   border: 2px solid rgba(245, 233, 66, 0);
 
 }
